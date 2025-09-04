@@ -6,6 +6,11 @@ use App\Models\Article;
 // Articleモデルの値全件取得
 state(['articles' => fn() => Article::all()]);
 
+// 新規作成メソッド
+$create = function () {
+    return redirect()->route('articles.create');
+};
+
 ?>
 
 <div>
@@ -20,6 +25,6 @@ state(['articles' => fn() => Article::all()]);
             </li>
         @endforeach
     </ul>
-    {{-- <button wire:click="create">新規論文投稿</button> --}}
+    <button wire:click="create">新規論文投稿</button>
 
 </div>
