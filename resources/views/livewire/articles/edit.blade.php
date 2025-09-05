@@ -17,7 +17,7 @@ mount(function (Article $article) {
 
 // 更新処理
 $update = function () {
-    // memo.phpのfillableで編集する項目を定義済みのためall()が使える
+    // memo.phpのfillableで編集する項目を定義済みのため、all()が使える
     $this->article->update($this->all());
     // 選択した論文を表示する詳細画面に遷移
     return redirect()->route('articles.show', $this->article);
