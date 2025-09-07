@@ -21,12 +21,12 @@ $store = function () {
     <form wire:submit="store">
         <p>
             <label for="title">論文タイトル</label>
-            <br>
+            {{-- <br> --}}
             <input type="text" wire:model="title" id="title">
         </p>
         <p>
             <label for="body">本文</label>
-            <br>
+            {{-- <br> --}}
             <textarea wire:model="body" id="body"></textarea>
         </p>
         <button type="submit">投稿</button>

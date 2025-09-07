@@ -31,13 +31,13 @@ $update = function () {
     <form wire:submit="update">
         <p>
             <label for="title">論文タイトル</label>
-            <br>
+            {{-- <br> --}}
             <input type="text" wire:model="title" id="title">
         </p>
         <p>
             <label for="body">本文</label>
-            <br>
             {{-- textarea:広がる入力欄 --}}
+            {{-- <br> --}}
             <textarea wire:model="body" id="body"></textarea>
         </p>
         {{-- ボタンはformタグの中に配置 --}}

@@ -22,7 +22,6 @@ $create = function () {
             {{-- titleをリンクで表示 --}}
             <a href="{{ route('articles.show', $article) }}">
                 {{ $article->title }}</a>
-            <br>
         </p>
     @endforeach
 
